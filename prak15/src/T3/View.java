@@ -22,11 +22,11 @@ public class View extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public int getValue() {
+    public double getValue() {
         return Integer.parseInt(textField.getText());
     }
 
-    public void setResult(int result) {
+    public void setResult(double result) {
         label.setText("Result: " + result);
     }
 
