@@ -1,6 +1,7 @@
 package T3;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import static java.lang.Math.sqrt;
 public class Controller {
     private Model model;
     private View view;
@@ -15,9 +16,9 @@ public class Controller {
     class SquareListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            int value = view.getValue();
+            double value = view.getValue();
             model.setValue(value);
-            int result = model.getValue() * model.getValue();
+            double result = sqrt(model.getValue());
             view.setResult(result);
         }
     }
