@@ -1,12 +1,12 @@
 package T3;
 
 public class Model {
-    private int value;
+    private double value;
 
-    public void setValue(int value) {
+    public void setValue(double value) {
         this.value = value;
     }
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 }
