@@ -5,9 +5,9 @@ public class Test {
         Order[] orders = new Order[10];
         for (int i = 0; i < orders.length; i++)
             orders[i] = new Order();
-        orders[3].add(new Dish(287,"Plate", "Now time to check this"));
-        orders[3].add(new Dish(30,"Cup", "It's just for tea"));
-        orders[1].add(new Dish(38, "Clock", "This is not a dish!!!"));
+        orders[3].add(new Dish(199,"Pasta", "Carbonara"));
+        orders[3].add(new Dish(40,"Tea", "BlackTea"));
+        orders[1].add(new Dish(275, "Lunch", "Combo"));
         orderManager.add(orders[3], 7);
         orderManager.add(orders[5], 5);
         orderManager.removeOrder(5);
